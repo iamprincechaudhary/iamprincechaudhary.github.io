@@ -27,4 +27,4 @@ dist-ssr
 
 # Config files
 src/config/emailConfig.ts
-/config.js
+# /config.js
