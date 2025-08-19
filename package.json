@@ -18,7 +18,8 @@
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-typed": "^2.0.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
@@ -38,5 +39,4 @@
     "vite": "^5.4.2"
   },
   "homepage": "https://www.princechaudhary.com.np/"
-
 }
