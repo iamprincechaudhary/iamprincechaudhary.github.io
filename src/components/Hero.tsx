@@ -11,13 +11,13 @@ export default function Hero() {
   });
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-white dark:bg-dark-bg">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-dark-bg">
       <div className="absolute inset-0 bg-network-pattern opacity-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
         <animated.div style={styles}>
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold mb-4 dark:text-white"
+            className="text-5xl md:text-6xl font-bold mb-4 text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p 
-            className="text-xl md:text-2xl mb-8 dark:text-gray-300"
+            className="text-xl md:text-2xl mb-8 text-gray-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function Hero() {
               backSpeed={40}
               backDelay={2000}
               loop
-              className="text-red-800 dark:text-red-400"
+              className="text-red-400"
             />
           </motion.p>
 
@@ -70,7 +70,7 @@ export default function Hero() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-black dark:bg-gray-800 rounded-full text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 bg-gray-800 rounded-full text-white hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >

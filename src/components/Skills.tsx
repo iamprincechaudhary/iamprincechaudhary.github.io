@@ -1,5 +1,5 @@
-import { Code2, Cloud, Box, Database, Globe, Palette, Smartphone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Box, Cloud, Code2, Database, Globe, Palette, Smartphone } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -66,10 +66,10 @@ export default function Skills() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ scale: 1.05 }}
-              className="relative bg-white/20 dark:bg-dark-card/80 
+              className="relative bg-dark-card/80 
                          backdrop-blur-md rounded-2xl p-6 
                          shadow-lg hover:shadow-orange-500/40 
-                         border border-orange-300/20 dark:border-orange-500/30 
+                         border border-orange-500/30 
                          transition-all duration-300"
             >
               {/* Icon & Title */}

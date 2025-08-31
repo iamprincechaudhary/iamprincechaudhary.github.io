@@ -1,5 +1,5 @@
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Calendar, GraduationCap, MapPin } from 'lucide-react';
 
 const education = [
   {
@@ -41,12 +41,12 @@ export default function Education() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ scale: 1.03 }}
-              className="relative bg-white/20 dark:bg-dark-card/80 backdrop-blur-md rounded-2xl p-6 shadow-lg 
-                         hover:shadow-orange-500/40 border border-orange-300/20 dark:border-orange-500/30 transition-all duration-300"
+              className="relative bg-dark-card/80 backdrop-blur-md rounded-2xl p-6 shadow-lg 
+                         hover:shadow-orange-500/40 border border-orange-500/30 transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-gradient-to-r from-orange-200 to-orange-300 dark:from-orange-700 dark:to-orange-900 rounded-lg">
-                  <GraduationCap className="w-6 h-6 text-orange-600 dark:text-orange-200" />
+                <div className="p-3 bg-gradient-to-r from-orange-700 to-orange-900 rounded-lg">
+                  <GraduationCap className="w-6 h-6 text-orange-200" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-2 text-white">{item.degree}</h3>

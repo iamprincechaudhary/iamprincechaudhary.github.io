@@ -74,8 +74,8 @@ export default function Contact() {
               { icon: MapPin, title: 'Location', info: 'Kathmandu, Nepal' },
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-4">
-                <div className="p-3 bg-orange-50 dark:bg-orange-900 rounded-lg">
-                  <item.icon className="w-6 h-6 text-orange-600 dark:text-orange-300" />
+                <div className="p-3 bg-orange-900 rounded-lg">
+                  <item.icon className="w-6 h-6 text-orange-300" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-white mb-1">{item.title}</h3>
@@ -87,7 +87,7 @@ export default function Contact() {
 
           <form
             onSubmit={handleSubmit}
-            className="space-y-6 bg-white/20 dark:bg-dark-card/80 backdrop-blur-md p-8 rounded-xl shadow-lg"
+            className="space-y-6 bg-dark-card/80 backdrop-blur-md p-8 rounded-xl shadow-lg"
           >
             <div>
               <label className="block text-sm font-medium text-white mb-1">Name</label>
@@ -96,7 +96,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder="Enter your name"
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-gray-200"
+                className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-dark-bg text-gray-200"
               />
               {formErrors.name && <p className="text-red-500 text-sm">{formErrors.name}</p>}
             </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-gray-200"
+                className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-dark-bg text-gray-200"
               />
               {formErrors.email && <p className="text-red-500 text-sm">{formErrors.email}</p>}
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Write your message"
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-gray-200"
+                className="w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-dark-bg text-gray-200"
               ></textarea>
               {formErrors.message && <p className="text-red-500 text-sm">{formErrors.message}</p>}
             </div>

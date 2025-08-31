@@ -1,5 +1,5 @@
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
@@ -56,12 +56,12 @@ export default function Experience() {
                   index % 2 === 0 ? 'justify-start md:justify-end' : 'justify-start'
                 } md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12 md:ml-auto'}`}
               >
-                <div className="bg-white/20 dark:bg-dark-card/80 backdrop-blur-md p-6 rounded-2xl shadow-lg 
-                                hover:shadow-orange-500/40 border border-orange-300/20 dark:border-orange-500/30 w-full transition-all duration-300">
+                <div className="bg-dark-card/80 backdrop-blur-md p-6 rounded-2xl shadow-lg 
+                                hover:shadow-orange-500/40 border border-orange-500/30 w-full transition-all duration-300">
                   
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 bg-gradient-to-r from-orange-200 to-orange-300 dark:from-orange-700 dark:to-orange-900 rounded-lg">
-                      <Briefcase className="w-6 h-6 text-orange-600 dark:text-orange-200" />
+                    <div className="p-3 bg-gradient-to-r from-orange-700 to-orange-900 rounded-lg">
+                      <Briefcase className="w-6 h-6 text-orange-200" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-1 text-white">{experience.title}</h3>

@@ -33,7 +33,7 @@ export default function About() {
             </h2>
             <p className="text-gray-300 mb-6">
               I'm a passionate <span className="text-blue-400">Cloud & DevOps Engineer</span> 
-              with a strong interest in automation, infrastructure, and scalable systems. 
+               with a strong interest in automation, infrastructure, and scalable systems. 
               I have hands-on experience with <span className="text-yellow-400">AWS</span>, 
               <span className="text-green-400"> Docker</span>, and modern 
               <span className="text-red-400"> CI/CD pipelines</span>.
